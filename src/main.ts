@@ -32,37 +32,32 @@ function setup() {
   bI.addEventListener("click", () => {
     // Increase the counter by 1
     c++;
-    // Update the counter display
-    ctr.innerHTML = `${c}`;
-    // Update the document title
-    document.title = "Clicked " + c;
-    // Change the background color based on even/odd count
-    document.body.style.backgroundColor = c % 2 ? "pink" : "lightblue";
+    updateText();
   });
 
   // Add click event to the decrement button
   bD.addEventListener("click", () => {
     // Decrease the counter by 1
     c--;
-    // Update the counter display
-    ctr.innerHTML = `${c}`;
-    // Update the document title
-    document.title = "Clicked " + c;
-    // Change the background color based on even/odd count
-    document.body.style.backgroundColor = c % 2 ? "pink" : "lightblue";
+    updateText();
   });
 
   // Add click event to the reset button
   bR.addEventListener("click", () => {
     // Reset the counter to 0
     c = 0;
+    updateText();
+  });
+
+  //Update body function / Extract Function
+  function updateText() {
     // Update the counter display
-    ctr.innerHTML = `${c}`;
+    ctr!.innerHTML = `${c}`;
     // Update the document title
     document.title = "Clicked " + c;
     // Change the background color based on even/odd count
     document.body.style.backgroundColor = c % 2 ? "pink" : "lightblue";
-  });
+  }
 }
 
 function start() {

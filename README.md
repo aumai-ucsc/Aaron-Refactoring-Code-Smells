@@ -38,3 +38,8 @@ This project is configured for automatic deployment to GitHub Pages using GitHub
 2. Under "Source", select "GitHub Actions"
 3. The workflow will automatically deploy on pushes to the `main` branch
 4. Your site will be published at `https://<your-github-username>.github.io/<repository-name>/`
+
+## Code Smells - Aaron Mai
+
+Duplicated Code in increment, decrement, and reset buttons
+Fixed by using Extract Function to pull out document title update and color update into thier own, update counter function
