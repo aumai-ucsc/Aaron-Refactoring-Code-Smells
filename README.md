@@ -46,3 +46,6 @@ Fixed by using Extract Function to pull out document title update and color upda
 
 The Start() function is a mix of Lazy Code and Middle Man because it is just being called to call another function.
 Fixed by removing the Start() function and call to start and replacing it with a single call to the Setup() function.
+
+Mysterious Name for counter(c) variable. Not a setup ID and used often in many functions without comment or discription
+Fixed by using Rename Variable and changing c to counter
