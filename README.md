@@ -43,3 +43,6 @@ This project is configured for automatic deployment to GitHub Pages using GitHub
 
 Duplicated Code in increment, decrement, and reset buttons
 Fixed by using Extract Function to pull out document title update and color update into thier own, update counter function
+
+The Start() function is a mix of Lazy Code and Middle Man because it is just being called to call another function.
+Fixed by removing the Start() function and call to start and replacing it with a single call to the Setup() function.

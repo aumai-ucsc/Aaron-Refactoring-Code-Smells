@@ -60,9 +60,5 @@ function setup() {
   }
 }
 
-function start() {
-  // Call setup to initialize the UI
-  setup();
-}
-// Start the counter app
-start();
+// Call setup to initialize the UI
+setup();
